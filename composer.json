@@ -1,0 +1,23 @@
+{
+    "name": "halinapuzina/simpletraining",
+    "description": "Framework Free",
+    "type": "project",
+    "require-dev": {
+        "dg/ftp-deployment": "^2.9",
+        "phpmailer/phpmailer": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "twig/twig": "^2.0"
+    },
+	"config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+	"autoload": {
+		   "psr-4": {
+			  "app\\": "app/"
+		   }
+		}
+}

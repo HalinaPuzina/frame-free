@@ -1,0 +1,30 @@
+
+    <div class="modal micromodal-slide" id="order-form-modal" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h2 class="modal__title" id="modal-1-title">
+                        ВВЕДИТЕ СВОЙ E-MAIL
+                    </h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <form id="order" novalidate>
+                    <main class="modal__content" id="modal-1-content">
+                            <input name="email" id="email" type="email" placeholder="e-mail" required>
+                            <input type="hidden" id="token" name="token" value="{{ csrf_token }}">
+                            <div class="message">
+                                <label class="message-text"  aria-live="polite"></label>
+                                <img class="image not-show" src="/assets/images/wasted.png" alt="wasted" title="wasted">
+                            </div>
+
+                    </main>
+                </form>
+                <footer class="modal__footer">
+                    <button class="modal__btn modal__btn-primary submit">Заказать</button>
+                    <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Закрыть</button>
+                </footer>
+
+            </div>
+        </div>
+    </div>
+
